@@ -53,7 +53,7 @@
       content:"";position:absolute;left:0;right:0;bottom:0;height:5px;
       background:linear-gradient(90deg,var(--gold),#ffe76d,var(--gold));
     }
-    .hero-grid{display:grid;grid-template-columns:1.6fr .72fr;gap:64px;align-items:center}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(340px,.85fr);gap:48px;align-items:center}
     .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:750;color:#ffe56b;margin-bottom:12px}
     h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(3.1rem,7vw,5.7rem);line-height:.96;margin:0 0 18px;font-weight:650;letter-spacing:-.035em}
     .title{font-size:1.35rem;color:#edf5fb;margin:0 0 8px}
@@ -67,11 +67,11 @@
     .btn-ghost:hover{background:rgba(255,255,255,.10)}
     .portrait-shell{display:grid;place-items:center}
     .portrait{
-      width:min(260px,72vw);aspect-ratio:1/1;object-fit:cover;border-radius:50%;
+      width:min(430px,88vw);aspect-ratio:4/3;object-fit:cover;object-position:center 38%;border-radius:24px;
       border:7px solid rgba(255,255,255,.95);box-shadow:0 26px 70px rgba(0,0,0,.30);background:#e8eef5;
     }
     .avatar-fallback{
-      width:min(260px,72vw);aspect-ratio:1/1;border-radius:50%;display:none;place-items:center;
+      width:min(430px,88vw);aspect-ratio:4/3;border-radius:24px;display:none;place-items:center;
       border:7px solid rgba(255,255,255,.95);box-shadow:0 26px 70px rgba(0,0,0,.30);
       background:linear-gradient(145deg,#f6f9fc,#d9e5ef);color:var(--navy);font-family:Georgia,serif;font-size:5rem;font-weight:700;
     }
@@ -134,8 +134,8 @@
             <a class="btn btn-ghost" href="publications.html">Publications</a>
           </div>
         </div>
-        <div class="portrait-shell" aria-label="Portrait">
-          <img class="portrait" src="https://faculty.uci.edu/get_image?facultyId=5707" alt="Portrait of Yifeng Yu" onerror="this.style.display='none';document.getElementById('avatarFallback').style.display='grid';" />
+        <div class="portrait-shell" aria-label="Family photo">
+          <img class="portrait" src="Family.png" alt="Yifeng Yu with family" onerror="this.style.display='none';document.getElementById('avatarFallback').style.display='grid';" />
           <div class="avatar-fallback" id="avatarFallback" aria-hidden="true">YY</div>
         </div>
       </div>
