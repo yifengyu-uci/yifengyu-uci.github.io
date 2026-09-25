@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Publications of Yifeng Yu, Professor of Mathematics at UC Irvine." />
+  <title>Publications | Yifeng Yu | UC Irvine</title>
+  <style>
+    :root{--navy:#0b1f3a;--navy2:#12365d;--gold:#ffd200;--ink:#17202a;--muted:#617083;--soft:#f5f8fb;--line:#dde6ef;--max:1060px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.62}
+    a{color:inherit} .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .top{position:sticky;top:0;z-index:20;background:rgba(11,31,58,.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+    nav{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{color:#fff;text-decoration:none;font-weight:780} .navlinks{display:flex;gap:7px;flex-wrap:wrap}
+    .navlinks a{color:#eaf1f7;text-decoration:none;padding:8px 11px;border-radius:10px;font-size:.93rem} .navlinks a:hover{background:rgba(255,255,255,.09)}
+    .hero{background:radial-gradient(circle at 82% 15%,rgba(255,210,0,.20),transparent 30%),linear-gradient(145deg,var(--navy),var(--navy2));color:#fff;padding:72px 0 66px;border-bottom:5px solid var(--gold)}
+    .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.77rem;font-weight:800;color:#ffe56b;margin-bottom:11px}
+    h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(3rem,7vw,5.3rem);line-height:.98;letter-spacing:-.035em;margin:0 0 13px}
+    .hero p{max-width:720px;color:#dce8f2;font-size:1.05rem;margin:0}
+    main{padding:46px 0 72px}
+    .toolbar{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;margin-bottom:24px}
+    .intro h2{font-family:Georgia,"Times New Roman",serif;color:var(--navy);font-size:2.1rem;margin:0 0 6px} .intro p{margin:0;color:var(--muted)}
+    .search{position:relative;min-width:290px} .search input{width:100%;border:1px solid var(--line);border-radius:13px;padding:12px 14px 12px 40px;font:inherit;color:var(--ink);background:#fff;outline:none}
+    .search input:focus{border-color:#9bb4cc;box-shadow:0 0 0 3px rgba(18,54,93,.08)} .search:before{content:"⌕";position:absolute;left:14px;top:8px;font-size:1.25rem;color:#758395}
+    .count{display:inline-block;margin-top:15px;padding:5px 9px;border-radius:999px;background:#fff5bb;color:#6f5a00;font-size:.78rem;font-weight:800;letter-spacing:.04em}
+    .publist{display:grid;gap:11px}
+    .pub{display:grid;grid-template-columns:54px 1fr;gap:15px;align-items:start;padding:17px 18px;background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:0 6px 18px rgba(15,36,61,.035);transition:.18s ease}
+    .pub:hover{transform:translateY(-1px);border-color:#c7d5e3;box-shadow:0 10px 26px rgba(15,36,61,.07)}
+    .num{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--navy);color:#fff;font-weight:800;font-variant-numeric:tabular-nums}
+    .pubtext{padding-top:4px} .source-note{margin-top:28px;padding:17px 19px;border-left:5px solid var(--gold);background:var(--soft);border-radius:0 12px 12px 0;color:var(--muted)}
+    .source-note a{color:var(--navy);font-weight:700}
+    footer{background:#08182c;color:#c9d7e4;padding:27px 0;font-size:.9rem} .foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap} footer a{color:#fff}
+    @media(max-width:760px){.toolbar{grid-template-columns:1fr}.search{min-width:0}.pub{grid-template-columns:44px 1fr;padding:15px 14px;gap:12px}.num{width:38px;height:38px}}
+    @media(max-width:520px){.wrap{width:min(var(--max),calc(100% - 26px))}.hero{padding:52px 0 48px}.navlinks a:nth-child(2){display:none}}
+  </style>
+</head>
+<body>
+  <header class="top">
+    <nav class="wrap" aria-label="Primary navigation">
+      <a class="brand" href="index.html">Yifeng Yu</a>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="math210a.html">Math 210A</a>
+        <a href="https://www.faculty.uci.edu/profile/?facultyId=5707" target="_blank" rel="noopener">UCI Profile</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Research · UC Irvine Mathematics</div>
+      <h1>Publications</h1>
+      <p>Research papers and preprints, listed in reverse chronological order.</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="wrap">
+      <div class="toolbar">
+        <div class="intro">
+          <h2>Publication list</h2>
+          <p>Yifeng Yu · Department of Mathematics · University of California, Irvine</p>
+          <span class="count" id="count">65 publications</span>
+        </div>
+        <label class="search" aria-label="Search publications"><input id="pubSearch" type="search" placeholder="Search title, author, journal, year…" autocomplete="off" /></label>
+      </div>
+
+      <section class="publist" id="pubList" aria-live="polite">
+        <article class="pub" data-search="l-infinity variational approximation of the aubry set (with hung v. tran), preprint.">
+  <div class="num">65</div>
+  <div class="pubtext">L-infinity variational approximation of the Aubry set (with Hung V. Tran), Preprint.</div>
+</article>
+<article class="pub" data-search="optimal convergence rates in periodic homogenization of nonconvex hamilton--jacobi equations (with jiwoong jang, qi sun, hung v), preprint, 2026.">
+  <div class="num">64</div>
+  <div class="pubtext">Optimal convergence rates in periodic homogenization of nonconvex Hamilton--Jacobi equations (with Jiwoong Jang, Qi Sun, Hung V), Preprint, 2026.</div>
+</article>
+<article class="pub" data-search="nonexistence of vanishing-viscosity limits for mechanical hamiltonian ergodic problems (with ziran liu, hung v. tran), preprint, 2026.">
+  <div class="num">63</div>
+  <div class="pubtext">NONEXISTENCE OF VANISHING-VISCOSITY LIMITS FOR MECHANICAL HAMILTONIAN ERGODIC PROBLEMS (with Ziran Liu, Hung V. Tran), Preprint, 2026.</div>
+</article>
+<article class="pub" data-search="geometry of the minimal level set of the effective hamiltonian in two dimensions, preprint, 2026.">
+  <div class="num">62</div>
+  <div class="pubtext">Geometry of the Minimal Level Set of the Effective Hamiltonian in Two Dimensions, Preprint, 2026.</div>
+</article>
+<article class="pub" data-search="sharp global and almost everywhere convergence rates for periodic homogenization of viscous quadratic hamilton-jacobi equations (with ziran liu, hung v. tran), preprint, 2026.">
+  <div class="num">61</div>
+  <div class="pubtext">Sharp global and almost everywhere convergence rates for periodic homogenization of viscous quadratic Hamilton-Jacobi equations (with Ziran Liu, Hung V. Tran), Preprint, 2026.</div>
+</article>
+<article class="pub" data-search="evaluating ai grading on real-world handwritten college mathematics: a large-scale study toward a benchmark (with zhiqi yu, xingping liu, haobin mao, mingshuo liu, long chen, jack xin), icml 2026, regular paper.">
+  <div class="num">60</div>
+  <div class="pubtext">Evaluating AI Grading on Real-World Handwritten College Mathematics: A Large-Scale Study Toward a Benchmark (with Zhiqi Yu, Xingping Liu, Haobin Mao, Mingshuo Liu, Long Chen, Jack Xin), ICML 2026, regular paper.</div>
+</article>
+<article class="pub" data-search="tt-dsc: enhancing yolo for marine ecosystem through efficient tensor train-based depthwise separable deep neural network (with yunduan lou, pu sun, shangping ren, and yu bai), acm transactions on autonomous and adaptive systems, 2025.">
+  <div class="num">59</div>
+  <div class="pubtext">TT-DSC: Enhancing YOLO for Marine Ecosystem through Efficient Tensor Train-based Depthwise Separable Deep Neural Network (with Yunduan Lou, Pu Sun, Shangping Ren, and Yu Bai), ACM Transactions on Autonomous and Adaptive Systems, 2025.</div>
+</article>
+<article class="pub" data-search="does yakhot&#x27;s growth law for turbulent burning velocity hold? (with wenjia jing, jack xin), to appear in arma.">
+  <div class="num">58</div>
+  <div class="pubtext">Does Yakhot&#x27;s growth law for turbulent burning velocity hold? (With Wenjia Jing, Jack Xin), to appear in ARMA.</div>
+</article>
+<article class="pub" data-search="lid-drug: a localized interactive domain-aggregated (lid) framework for protein drug editing (with mingshuo liu, yuanduan lou, shiyi luo, shangping ren, and yu bai), pricai 2025.">
+  <div class="num">57</div>
+  <div class="pubtext">LID-Drug: A Localized Interactive Domain-Aggregated (LID) Framework for Protein Drug Editing (with Mingshuo Liu, Yuanduan Lou, Shiyi Luo, Shangping Ren, and Yu Bai), PRICAI 2025.</div>
+</article>
+<article class="pub" data-search="global well-posedness and convergence analysis of score-based generative models via sharp lipschitz estimates (with c. mooney, z. wang, jack xin), iclr, 2025.">
+  <div class="num">56</div>
+  <div class="pubtext">Global Well-posedness and Convergence Analysis of Score-based Generative Models via Sharp Lipschitz Estimates (with C. Mooney, Z. Wang, Jack Xin), ICLR, 2025.</div>
+</article>
+<article class="pub" data-search="optimal rate of convergence in periodic homogenization of viscous hamilton-jacobi equations (with j. qian, t. sprekeler and hung tran), to appear in multiscale modeling and simulation, 2024.">
+  <div class="num">55</div>
+  <div class="pubtext">Optimal rate of convergence in periodic homogenization of viscous Hamilton-Jacobi equations (with J. Qian, T. Sprekeler and Hung Tran), to appear in Multiscale Modeling and Simulation, 2024.</div>
+</article>
+<article class="pub" data-search="lagrangian game theoretic and pde methods for averaging g-equations in turbulent combustion: existence and beyond (with jack xin and paul ronney), bulletin of ams, volume 61, number 3, july 2024, pages 470–514.">
+  <div class="num">54</div>
+  <div class="pubtext">Lagrangian game theoretic and PDE methods for averaging G-equations in turbulent combustion: existence and beyond (with Jack Xin and Paul Ronney), Bulletin of AMS, Volume 61, Number 3, July 2024, Pages 470–514.</div>
+</article>
+<article class="pub" data-search="bifurcation of homogenization and nonhomogenization of the curvature g-equation with shear flows (with hiroyoshi mitake, connor mooney, hung v. tran and jack xin), mathematische annalen, volume 391, pages 3077–3111 (2025).">
+  <div class="num">53</div>
+  <div class="pubtext">Bifurcation of homogenization and nonhomogenization of the curvature G-equation with shear flows (with Hiroyoshi Mitake, Connor Mooney, Hung V. Tran and Jack Xin), Mathematische Annalen, Volume 391, pages 3077–3111 (2025).</div>
+</article>
+<article class="pub" data-search="existence of an effective burning velocity in cellular flow for curvature g-equation via game analysis (with hongwei gao, ziang long, jack xin), journal of geometric analysis, volume 34, article number 81 (2024).">
+  <div class="num">52</div>
+  <div class="pubtext">Existence of an effective burning velocity in cellular flow for curvature G-equation via game analysis (with Hongwei Gao, Ziang Long, Jack Xin), Journal of Geometric Analysis, Volume 34, article number 81 (2024).</div>
+</article>
+<article class="pub" data-search="differentiability of effective fronts in the continuous setting in two dimensions (with hung tran), international mathematics research notices, volume 2024, issue 7, april 2024, pages 5548–5585.">
+  <div class="num">51</div>
+  <div class="pubtext">Differentiability of effective fronts in the continuous setting in two dimensions (with Hung Tran), International Mathematics Research Notices, Volume 2024, Issue 7, April 2024, Pages 5548–5585.</div>
+</article>
+<article class="pub" data-search="effective fronts of polygon shapes in two dimensions (with wenjia jing, hung v. tran), siam journal on mathematical analysis, vol. 55, iss. 6 (2023).">
+  <div class="num">50</div>
+  <div class="pubtext">Effective fronts of polygon shapes in two dimensions (with Wenjia Jing, Hung V. Tran), SIAM Journal on Mathematical Analysis, Vol. 55, Iss. 6 (2023).</div>
+</article>
+<article class="pub" data-search="optimal convergence rate for periodic homogenization of convex hamilton-jacobi equations (with hung tran), to appear in indiana univ. math. j.">
+  <div class="num">49</div>
+  <div class="pubtext">Optimal convergence rate for periodic homogenization of convex Hamilton-Jacobi equations (with Hung Tran), to appear in Indiana Univ. Math. J.</div>
+</article>
+<article class="pub" data-search="high degeneracy of effective hamiltonian in two dimensions, ann. inst. h. poincaré anal. non linéaire 39 (2022), no. 1, pp. 201–223.">
+  <div class="num">48</div>
+  <div class="pubtext">High Degeneracy of Effective Hamiltonian in Two Dimensions, Ann. Inst. H. Poincaré Anal. Non Linéaire 39 (2022), no. 1, pp. 201–223.</div>
+</article>
+<article class="pub" data-search="effective fronts of polytope shapes (with wenjia jing, hung v. tran), minimax theory and its applications 05 (2020), no. 2, 347--360.">
+  <div class="num">47</div>
+  <div class="pubtext">Effective fronts of polytope shapes (With Wenjia Jing, Hung V. Tran), Minimax Theory and its Applications 05 (2020), No. 2, 347--360.</div>
+</article>
+<article class="pub" data-search="remarks on optimal rates of convergence in periodic homogenization of linear elliptic equations in non-divergence form (with x. guo, h. v. tran), sn partial differential equations and applications, 1, article number: 15 (2020). dedicated to hitoshi ishii on the award of the 1st kodaira kunihiko prize.">
+  <div class="num">46</div>
+  <div class="pubtext">Remarks on optimal rates of convergence in periodic homogenization of linear elliptic equations in non-divergence form (with X. Guo, H. V. Tran), SN Partial Differential Equations and Applications, 1, Article number: 15 (2020). Dedicated to Hitoshi Ishii on the award of the 1st Kodaira Kunihiko Prize.</div>
+</article>
+<article class="pub" data-search="rate of convergence in periodic homogenization of hamilton-jacobi equations: the convex setting (with h. mitake, h. tran), arch. rational mech. analysis, 2019, volume 233, issue 2, pp 901–934.">
+  <div class="num">45</div>
+  <div class="pubtext">Rate of convergence in periodic homogenization of Hamilton-Jacobi equations: the convex setting (with H. Mitake, H. Tran), Arch. Rational Mech. Analysis, 2019, Volume 233, Issue 2, pp 901–934.</div>
+</article>
+<article class="pub" data-search="a rigidity result for effective hamiltonians with 3-mode periodic potentials (with hung v. tran), submitted, advances in mathematics, volume 334, 20 2018, pages 300-321.">
+  <div class="num">44</div>
+  <div class="pubtext">A rigidity result for effective Hamiltonians with 3-mode periodic potentials (with Hung V. Tran), submitted, Advances in Mathematics, Volume 334, 20 2018, Pages 300-321.</div>
+</article>
+<article class="pub" data-search="min-max formulas and other properties of certain classes of nonconvex effective hamiltonians (with jianliang qian, hung tran), mathematische annalen, 2018, volume 372, issue 1–2, pp 91–123.">
+  <div class="num">43</div>
+  <div class="pubtext">Min-max formulas and other properties of certain classes of nonconvex effective Hamiltonians (with Jianliang Qian, Hung Tran), Mathematische Annalen, 2018, Volume 372, Issue 1–2, pp 91–123.</div>
+</article>
+<article class="pub" data-search="curvature effect in shear flow: slowdown of turbulent flame speeds with markstein number (with jiancheng lyu, jack xin), communications in math physics, 2018, volume 359, issue 2, pp 515–533.">
+  <div class="num">42</div>
+  <div class="pubtext">Curvature effect in shear flow: slowdown of turbulent flame speeds with Markstein number (with Jiancheng Lyu, Jack Xin), Communications in Math Physics, 2018, Volume 359, Issue 2, pp 515–533.</div>
+</article>
+<article class="pub" data-search="computing residual diffusivity by adaptive basis learning via spectral method (with jiancheng lyu, jack xin), numerical mathematics: theory, methods &amp; applications, 2017, to appear.">
+  <div class="num">41</div>
+  <div class="pubtext">Computing Residual Diffusivity by Adaptive Basis Learning via Spectral Method (with Jiancheng Lyu, Jack Xin), Numerical Mathematics: Theory, Methods &amp; Applications, 2017, to appear.</div>
+</article>
+<article class="pub" data-search="performance analysis and signal design for a stationary signalized ring road (joint with wenlong jin), submitted.">
+  <div class="num">40</div>
+  <div class="pubtext">Performance analysis and signal design for a stationary signalized ring road (joint with Wenlong Jin), submitted.</div>
+</article>
+<article class="pub" data-search="spiral waves, edge transport, and front speed enhancement for abc flows (joint with tyler mcmillen, jack xin and andrej zlatos), siam j. appl. dyn. syst., 15(3), 1753–1782.">
+  <div class="num">39</div>
+  <div class="pubtext">Spiral Waves, Edge Transport, and Front Speed Enhancement for ABC Flows (joint with Tyler McMillen, Jack Xin and Andrej Zlatos), SIAM J. Appl. Dyn. Syst., 15(3), 1753–1782.</div>
+</article>
+<article class="pub" data-search="inverse problems, non-roundness and flat pieces of the effective burning velocity from an inviscid quadratic hamilton-jacobi model (joint with wenjia jing and hung tran), nonlinearity, volume 30, number 5, 2017.">
+  <div class="num">38</div>
+  <div class="pubtext">Inverse problems, non-roundness and flat pieces of the effective burning velocity from an inviscid quadratic Hamilton-Jacobi model (joint with Wenjia Jing and Hung Tran), Nonlinearity, Volume 30, Number 5, 2017.</div>
+</article>
+<article class="pub" data-search="periodic orbits of the abc flow with a=b=c=1 (joint with jack xin, andrej zlatos), siam j. math. anal., 48(6), 4087–4093.">
+  <div class="num">37</div>
+  <div class="pubtext">Periodic orbits of the ABC flow with A=B=C=1 (Joint with Jack Xin, Andrej Zlatos), SIAM J. Math. Anal., 48(6), 4087–4093.</div>
+</article>
+<article class="pub" data-search="some inverse problems in periodic homogenization of hamilton-jacobi equations (joint with songting luo, hung tran), arch. rational mech. analysis, 221 (3), pp 1585–1617, 2016.">
+  <div class="num">36</div>
+  <div class="pubtext">Some inverse problems in periodic homogenization of Hamilton-Jacobi equations (joint with Songting Luo, Hung Tran), Arch. Rational Mech. Analysis, 221 (3), pp 1585–1617, 2016.</div>
+</article>
+<article class="pub" data-search="stochastic homogenization of nonconvex hamilton-jacobi equations in one space dimension (joint with scott armstrong, hung tran), j. differential equations, 261(5), 2016, pp. 2702–2737.">
+  <div class="num">35</div>
+  <div class="pubtext">Stochastic homogenization of nonconvex Hamilton-Jacobi equations in one space dimension (joint with Scott Armstrong, Hung Tran), J. Differential Equations, 261(5), 2016, pp. 2702–2737.</div>
+</article>
+<article class="pub" data-search="asymptotic solution and effective hamiltonian of a hamilton-jacobi equation in the modeling of traffic flow on a homogeneous signalized road (joint with wenlong jin), j. math. pure appl., 104(5), 2015, pages 982-1004.">
+  <div class="num">34</div>
+  <div class="pubtext">Asymptotic solution and effective Hamiltonian of a Hamilton-Jacobi equation in the modeling of traffic flow on a homogeneous signalized road (joint with Wenlong Jin), J. Math. Pure Appl., 104(5), 2015, Pages 982-1004.</div>
+</article>
+<article class="pub" data-search="stochastic homogenization of a nonconvex hamilton-jacobi equation (joint with scott armstrong, hung tran), calc. var. partial differential equations, october 2015, volume 54, issue 2, pp 1507–1524.">
+  <div class="num">33</div>
+  <div class="pubtext">Stochastic homogenization of a nonconvex Hamilton-Jacobi equation (joint with Scott Armstrong, Hung Tran), Calc. Var. Partial Differential Equations, October 2015, Volume 54, Issue 2, pp 1507–1524.</div>
+</article>
+<article class="pub" data-search="asymptotic growth rates and strong bending of turbulent flame speeds of g-equation in steady two dimensional incompressible periodic flows (joint with jack xin), siam j. math analysis, 46(4), pp. 2444–2467, 2014.">
+  <div class="num">32</div>
+  <div class="pubtext">Asymptotic growth rates and strong bending of turbulent flame speeds of G-equation in steady two dimensional incompressible periodic flows (joint with Jack Xin), SIAM J. Math Analysis, 46(4), pp. 2444–2467, 2014.</div>
+</article>
+<article class="pub" data-search="front quenching in g-equation model induced by straining of cellular flow (joint with jack xin), arch. rational. mechanics. anal, 214(2014), pp. 1–34.">
+  <div class="num">31</div>
+  <div class="pubtext">Front Quenching in G-equation Model Induced by Straining of Cellular Flow (joint with Jack Xin), Arch. Rational. Mechanics. Anal, 214(2014), pp. 1–34.</div>
+</article>
+<article class="pub" data-search="turbulent flame speeds of g-equation models in unsteady cellular flows (with y. liu, jack xin), math model. natural phenom., 8(3), pp. 198-205, 2013.">
+  <div class="num">30</div>
+  <div class="pubtext">Turbulent Flame Speeds of G-equation Models in Unsteady Cellular Flows (with Y. Liu, Jack Xin), Math Model. Natural Phenom., 8(3), pp. 198-205, 2013.</div>
+</article>
+<article class="pub" data-search="sharp asymptotic growth laws of turbulent flame speeds in cellular flows by inviscid hamilton-jacobi models, (with jack xin), annales i’institut h. poincare- analyse non lineaire. 30(6), pp. 1049-1068, 2013.">
+  <div class="num">29</div>
+  <div class="pubtext">Sharp asymptotic growth laws of turbulent flame speeds in cellular flows by inviscid Hamilton-Jacobi models, (with Jack Xin), Annales I’Institut H. Poincare- Analyse non lineaire. 30(6), pp. 1049-1068, 2013.</div>
+</article>
+<article class="pub" data-search="a numerical study of turbulent flame speeds of curvature and strain g-equations in cellular flows, (with y. liu, y. yu), physica d, 243(1), pp. 20-31, 2013. doi:10.1016/j.physd.2012.09.008.">
+  <div class="num">28</div>
+  <div class="pubtext">A Numerical Study of Turbulent Flame Speeds of Curvature and Strain G-equations in Cellular Flows, (with Y. Liu, Y. Yu), Physica D, 243(1), pp. 20-31, 2013. DOI:10.1016/j.physd.2012.09.008.</div>
+</article>
+<article class="pub" data-search="nonuniqueness of infinity ground states (with ryan hynd and charles smart), calc. var. partial differential equations, november 2013, volume 48, issue 3, pp 545–554.">
+  <div class="num">27</div>
+  <div class="pubtext">Nonuniqueness of infinity ground states (with Ryan Hynd and Charles Smart), Calc. Var. Partial Differential Equations, November 2013, Volume 48, Issue 3, pp 545–554.</div>
+</article>
+<article class="pub" data-search="c1-boundary regularity of planar infinity harmonic functions (with changyou wang), math. res. lett. 19 (2012), no. 4, 823–835.">
+  <div class="num">26</div>
+  <div class="pubtext">C1-boundary regularity of planar infinity harmonic functions (with Changyou Wang), Math. Res. Lett. 19 (2012), no. 4, 823–835.</div>
+</article>
+<article class="pub" data-search="a new approximation for effective hamiltonians for homogenization of a class of hamilton-jacobi equations (joint with songting luo, hongkai zhao), multiscale modeling and simulation (mms), vol. 9 issue 2, 711-734 (2011).">
+  <div class="num">25</div>
+  <div class="pubtext">A new approximation for effective Hamiltonians for homogenization of a class of Hamilton-Jacobi equations (joint with Songting Luo, Hongkai Zhao), Multiscale Modeling and Simulation (MMS), Vol. 9 Issue 2, 711-734 (2011).</div>
+</article>
+<article class="pub" data-search="asymptotics for turbulent flame speeds of the viscous g-equation enhanced by cellular and shear flows (joint with jack xin, yu-yu liu), arch. rational. mechanics. anal, 199(2), pp 527-561 (2011).">
+  <div class="num">24</div>
+  <div class="pubtext">Asymptotics for turbulent flame speeds of the viscous G-equation enhanced by cellular and shear flows (joint with Jack Xin, Yu-yu Liu), Arch. Rational. Mechanics. Anal, 199(2), pp 527-561 (2011).</div>
+</article>
+<article class="pub" data-search="periodic homogenization of g-equations and viscosity effects (with yu-yu liu, jack xin), nonlinearity, 23(2010), pp 2351-2367.">
+  <div class="num">23</div>
+  <div class="pubtext">Periodic homogenization of G-equations and viscosity effects (with Yu-yu Liu, Jack Xin), Nonlinearity, 23(2010), pp 2351-2367.</div>
+</article>
+<article class="pub" data-search="homogenization of generalized characteristics associated to solutions of time-dependent hamilton-jacobi equations, asymptotic analysis, volume 69, number 1-2/2010, page 99-116.">
+  <div class="num">22</div>
+  <div class="pubtext">Homogenization of generalized characteristics associated to solutions of time-dependent Hamilton-Jacobi equations, Asymptotic Analysis, Volume 69, Number 1-2/2010, page 99-116.</div>
+</article>
+<article class="pub" data-search="periodic homogenization of inviscid g-equation for incompressible flows (with j. xin), comm math sciences, vol.8, no. 4, pp1067-1078, 2010.">
+  <div class="num">21</div>
+  <div class="pubtext">Periodic Homogenization of Inviscid G-equation for Incompressible Flows (with J. Xin), Comm Math Sciences, Vol.8, No. 4, pp1067-1078, 2010.</div>
+</article>
+<article class="pub" data-search="bounds on front speeds for inviscid and viscous g-equations (with j. nolen, j. xin), methods and applications of analysis, vol 16, no.4, pp 507-520, 2009.">
+  <div class="num">20</div>
+  <div class="pubtext">Bounds on Front Speeds for Inviscid and Viscous G-equations (with J. Nolen, J. Xin), Methods and Applications of Analysis, Vol 16, No.4, pp 507-520, 2009.</div>
+</article>
+<article class="pub" data-search="mather measures selected by an approximation scheme, (with diogo gomes, renato iturriaga, hector sanchez-morgado), proceedings of ams, volume 138, number 10, october 2010, pages 3591–3601.">
+  <div class="num">19</div>
+  <div class="pubtext">Mather measures selected by an approximation scheme, (with Diogo Gomes, Renato Iturriaga, Hector Sanchez-Morgado), Proceedings of AMS, Volume 138, Number 10, October 2010, Pages 3591–3601.</div>
+</article>
+<article class="pub" data-search="maximal and minimal solutions of an aronsson equation: l variational problems versus the game theory, calc. var. partial differential equations 37 (2010), no. 1-2, 63--74.">
+  <div class="num">18</div>
+  <div class="pubtext">Maximal and minimal solutions of an Aronsson equation: L variational problems versus the game theory, Calc. Var. Partial Differential Equations 37 (2010), no. 1-2, 63--74.</div>
+</article>
+<article class="pub" data-search="dynamics of propagation of singularities of semiconcave functions, (with p. cannarsa), j. eur. math. soc (jems), 11 (2009), no. 5, 999-1024.">
+  <div class="num">17</div>
+  <div class="pubtext">Dynamics of propagation of singularities of semiconcave functions, (with P. Cannarsa), J. Eur. Math. Soc (JEMS), 11 (2009), no. 5, 999-1024.</div>
+</article>
+<article class="pub" data-search="uniqueness of values of aronsson operators and applications to game theory, annales i’institut h. poincare- analyse non lineaire, 26 (2009), no. 4, 1299-1308.">
+  <div class="num">16</div>
+  <div class="pubtext">Uniqueness of values of Aronsson operators and applications to game theory, Annales I’Institut H. Poincare- Analyse non lineaire, 26 (2009), no. 4, 1299-1308.</div>
+</article>
+<article class="pub" data-search="derivation of aronsson equation for c1 hamiltonian, (with m.g. crandall, changyou wang), trans. amer. math. soc. 361 (2009), no. 1, 103–124.">
+  <div class="num">15</div>
+  <div class="pubtext">Derivation of Aronsson equation for C1 Hamiltonian, (with M.G. Crandall, Changyou Wang), Trans. Amer. Math. Soc. 361 (2009), no. 1, 103–124.</div>
+</article>
+<article class="pub" data-search="uniqueness and nonuniqueness of viscosity solutions of aronsson equations, (with robert jensen, changyou wang), arch. rational. mechanics. anal, 2008, no. 2, 347–370.">
+  <div class="num">14</div>
+  <div class="pubtext">Uniqueness and Nonuniqueness of viscosity solutions of Aronsson equations, (with Robert Jensen, Changyou Wang), Arch. Rational. Mechanics. Anal, 2008, no. 2, 347–370.</div>
+</article>
+<article class="pub" data-search="aronsson’s equations on carnot-caratheodory spaces, (with changyou wang), illinois j. math. 52 (2008), no. 3, 757--772.">
+  <div class="num">13</div>
+  <div class="pubtext">Aronsson’s equations on Carnot-Caratheodory spaces, (with Changyou Wang), Illinois J. Math. 52 (2008), no. 3, 757--772.</div>
+</article>
+<article class="pub" data-search="asymptotic behavior of infinity harmonic functions near isolated singularity, (with ovidius savin, changyou wang), int. math. res. not, vol. 2008. no. 6, art. id rnm163, 23 pp.">
+  <div class="num">12</div>
+  <div class="pubtext">Asymptotic behavior of infinity harmonic functions near isolated singularity, (with Ovidius Savin, Changyou Wang), Int. Math. Res. Not, Vol. 2008. no. 6, Art. ID rnm163, 23 pp.</div>
+</article>
+<article class="pub" data-search="c1-regularity of the aronsson equation in r2, (with changyou wang), annales i’institut h. poincare- analyse non lineaire, 25 (2008) 659-678.">
+  <div class="num">11</div>
+  <div class="pubtext">C1-regularity of the Aronsson equation in R2, (with Changyou wang), Annales I’Institut H. Poincare- Analyse non lineaire, 25 (2008) 659-678.</div>
+</article>
+<article class="pub" data-search="singular set of a convex potential in two dimensions, comm. partial differential equations, 32 (2007), no. 10-12, 1883–1894.">
+  <div class="num">10</div>
+  <div class="pubtext">Singular set of a convex potential in two dimensions, Comm. Partial Differential Equations, 32 (2007), no. 10-12, 1883–1894.</div>
+</article>
+<article class="pub" data-search="l variational problems and weak kam theory, comm. pure appl. math, vol. 60 (2007), no. 8, 1111–1147.">
+  <div class="num">9</div>
+  <div class="pubtext">L variational problems and weak KAM theory, Comm. Pure Appl. Math, Vol. 60 (2007), no. 8, 1111–1147.</div>
+</article>
+<article class="pub" data-search="a remark on the semiclassical measure, proc. amer. math. soc. 135 (2007), no. 5, 1449-1454.">
+  <div class="num">8</div>
+  <div class="pubtext">A remark on the semiclassical measure, Proc. Amer. Math. Soc. 135 (2007), no. 5, 1449-1454.</div>
+</article>
+<article class="pub" data-search="some properties of the infinity ground state, indiana university mathematics journal. 56 no. 2 (2007), 947-964.">
+  <div class="num">7</div>
+  <div class="pubtext">Some properties of the infinity ground state, Indiana University Mathematics Journal. 56 No. 2 (2007), 947-964.</div>
+</article>
+<article class="pub" data-search="a remark on the c2 solution of the infinity laplacian equation, electron. j. diff. eqns, vol. 2006, no. 122, pp. 1-4.">
+  <div class="num">6</div>
+  <div class="pubtext">A remark on the C2 solution of the infinity Laplacian equation, Electron. J. Diff. Eqns, Vol. 2006, No. 122, pp. 1-4.</div>
+</article>
+<article class="pub" data-search="a simple proof of the propagation of singularities for solutions of hamilton-jacobi equations, ann. sc. norm. super. pisa. cl. sci. (5). 2006, 439-444.">
+  <div class="num">5</div>
+  <div class="pubtext">A simple proof of the propagation of singularities for solutions of Hamilton-Jacobi equations, Ann. Sc. Norm. Super. Pisa. Cl. Sci. (5). 2006, 439-444.</div>
+</article>
+<article class="pub" data-search="generalized cone comparison principle for viscosity solutions of the aronsson equation and absolute minimizers, (with ron gariepy, changyou wang), comm. partial differential equations, 31 (2006), no. 7-9, 1027-1046.">
+  <div class="num">4</div>
+  <div class="pubtext">Generalized cone comparison principle for viscosity solutions of the Aronsson equation and absolute minimizers, (with Ron Gariepy, Changyou Wang), Comm. Partial Differential Equations, 31 (2006), no. 7-9, 1027-1046.</div>
+</article>
+<article class="pub" data-search="l variational problems and aronsson equations, arch. rational. mechanics. anal, 182 (2006), no. 1, 153-180.">
+  <div class="num">3</div>
+  <div class="pubtext">L variational problems and Aronsson equations, Arch. Rational. Mechanics. Anal, 182 (2006), no. 1, 153-180.</div>
+</article>
+<article class="pub" data-search="various properties of solutions to the infinity laplacian equation, (with l.c. evans). comm. partial differential equations, 30 (2005), no. 7-9, 1401–1428.">
+  <div class="num">2</div>
+  <div class="pubtext">Various properties of solutions to the infinity Laplacian equation, (with L.C. Evans). Comm. Partial Differential Equations, 30 (2005), no. 7-9, 1401–1428.</div>
+</article>
+<article class="pub" data-search="tangent lines of contact for the infinity laplacian, calc. var. partial differential equations, 21 (2004), no. 4, 349–355.">
+  <div class="num">1</div>
+  <div class="pubtext">Tangent lines of contact for the Infinity Laplacian, Calc. Var. Partial Differential Equations, 21 (2004), no. 4, 349–355.</div>
+</article>
+      </section>
+
+      <div class="source-note">This page follows the publication list on my <a href="https://www.faculty.uci.edu/profile/?facultyId=5707" target="_blank" rel="noopener">official UCI faculty profile</a>, last updated September 1, 2026.</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>Yifeng Yu · Department of Mathematics · UC Irvine</span>
+      <span><a href="index.html">Home</a> · <a href="mailto:yifengy@uci.edu">yifengy@uci.edu</a></span>
+    </div>
+  </footer>
+
+  <script>
+    const input = document.getElementById('pubSearch');
+    const pubs = [...document.querySelectorAll('.pub')];
+    const count = document.getElementById('count');
+    input.addEventListener('input', () => {
+      const q = input.value.trim().toLowerCase();
+      let visible = 0;
+      pubs.forEach(p => {
+        const show = !q || p.dataset.search.includes(q);
+        p.style.display = show ? 'grid' : 'none';
+        if (show) visible++;
+      });
+      count.textContent = visible + (visible === 1 ? ' publication' : ' publications');
+    });
+  </script>
+</body>
+</html>
